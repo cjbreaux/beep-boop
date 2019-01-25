@@ -23,6 +23,7 @@ function counter (number) {
 function beepBooper(number) {
   if (isNaN(number)){
     alert("Beep Boop! I can only read numbers!")
+    return output
   }
   var arrayOfStrings = counter(number); //takes in user input and passes it through the counter function to return an array
 
