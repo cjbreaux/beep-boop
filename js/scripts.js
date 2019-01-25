@@ -10,23 +10,18 @@ function counter (number) {
   array.push(number - i);
   }
   array = array.reverse();
-  resultString = array.join();
-  array = resultString.split();
-  console.log(array);
-  return array;
+  array.forEach(function(integer){
+    resultArray.push(integer.toString());
+  })
+  console.log(resultArray);
+  return resultArray;
 }
 
 function beepBooper(number) {
-  var outputString = counter(number);
-  //console.log("Inside beepBooper" + outputString);
+  var arrayOfStrings = counter(number);
+  console.log(arrayOfStrings);
 
-  for (i=0; i<outputString.length; i+=1) {
-    console.log(outputString[i]);
-    if (outputString[i].includes("1")) {
-      //alert("has a 1");
-    }
-  }
- console.log(outputString);
+// console.log(outputString);
 }; //end beepBooper
 
 //beginning to implement user interface logic to display results to index.html
