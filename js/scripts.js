@@ -53,6 +53,11 @@ $(document).ready(function(){
     $(".results").text(output);
     $("form#beepbooper").hide();
     $(".card").show();
-
   });
+
+  $("#reset").click(function(){
+    location.reload();
+  })
+
+
 });
