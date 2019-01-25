@@ -47,6 +47,6 @@ $(document).ready(function(){
     //store the result as a new variable * not needed as of yet
     var output = beepBooper(number);
     //print the populated array
-    $("#results").text(output);
+    $(".results").text(output);
   });
 });
