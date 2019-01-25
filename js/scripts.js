@@ -21,6 +21,7 @@ function counter (number) {
 }
 
 function beepBooper(number) {
+  if (isNaN(number)) {alert("Beep Boop! I can only read numbers!")}
   var arrayOfStrings = counter(number); //takes in user input and passes it through the counter function to return an array
 
   arrayOfStrings.forEach(function(num){
@@ -34,6 +35,7 @@ function beepBooper(number) {
     else { outputArray.push(num)}
   })
   result = outputArray.join(", ")
+  return result
 
 }; //end beepBooper
 
@@ -43,8 +45,8 @@ $(document).ready(function(){
     event.preventDefault();
     var number = parseInt($("input#userInput").val());
     //store the result as a new variable * not needed as of yet
-    beepBooper(number);
+    var output = beepBooper(number);
     //print the populated array
-    $("#results").text(result);
+    $("#results").text(output);
   });
 });

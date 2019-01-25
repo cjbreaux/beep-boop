@@ -54,7 +54,7 @@ Please note, this project relies upon a CDN to load some resources. You will nee
 
 ## Known Bugs
 
-No known bugs.
+Will continue to add text after upon repeated submissions.
 
 ## Support and contact details
 
