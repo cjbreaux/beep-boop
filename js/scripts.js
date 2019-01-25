@@ -5,18 +5,22 @@ var number = 5;
 var array = [];
 
 
-// array.push(number);
-// array.push(number-1);
-// array.push(number-2);
-// array.push(number-3);
-// array.push(number-4);
-// array.push(number-number)
-// console.log(array.reverse());
-
-//this will create a for loop to produce an array doing the same thing as the previous code but for any number. 
+//this will create a for loop to produce an array doing the same thing as the previous code but for any number.
 for(i=0; i<=number; i+=1) {
   array.push(number - i);
 }
 
 array = array.reverse();
 console.log(array);
+
+//beginning to implement user interface logic to display results to index.html
+$(document).ready(function(){
+  $("form#beepbooper").submit(function(event){
+    event.preventDefault();
+    var number = parseInt($("input#userInput").val());
+    console.log(number);
+
+  });
+
+
+});
