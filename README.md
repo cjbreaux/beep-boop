@@ -1,4 +1,4 @@
-# Track Suggester
+# Beep Boop!
 
 #### Third Independent Project from Epicodus, January 25, 2019
 
@@ -71,7 +71,7 @@ https://github.com/cjbreaux/
 
 ## Technologies Used
 
-This site utilizes JavaScript, jQuery slim v3.3.1, Bootstrap v4.2.1, and a custom CSS stylesheet.
+This site utilizes JavaScript, jQuery v3.3.1, Bootstrap v4.2.1, and a custom CSS stylesheet.
 
 ### License
 
