@@ -12,9 +12,26 @@ You can view the page by following this link:
 https://cjbreaux.github.io/beep-boop
 
 ## Specifications
-1 Program returns a range of numbers from 0 to the user input.
+1. Program returns a range of numbers from 0 to the user input.
   * Input: 4
   * Output: 0,1,2,3,4
+
+2. For numbers containing 1, ALL digits will be replaced with "Beep!"
+* Input: 4
+* Output: 0,"Beep!",2,3,4
+
+3. For numbers containing 2, ALL digits will be replaced with "Boop!"
+* Input: 4
+* Output: 0,"Beep!","Boop!",3,4
+
+4. For numbers containing 3, ALL digits will be replaced with "I'm sorry Dave, I can't do that right now."
+* Input: 4
+* Output: 0,"Beep!","Boop!","I'm sorry Dave, I can't do that right now.",4
+
+5. More exceptions to be added later
+
+
+
 
 ## Setup/Installation Requirements
 
