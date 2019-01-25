@@ -1,6 +1,5 @@
 
-//var result = "";
-
+var result = "";
 var array = [];
 var resultArray = [];
 var resultString = "";
@@ -26,7 +25,7 @@ function beepBooper(number) {
 
   arrayOfStrings.forEach(function(num){
     if (num.includes("3")) {
-      outputArray.push("I'm sorry Dave.I can't do that right now.")
+      outputArray.push("I'm sorry Dave,I can't do that right now")
     } else if (num.includes("2")) {
       outputArray.push("Boop!")
     } else if (num.includes("1")) {
@@ -34,6 +33,8 @@ function beepBooper(number) {
     }
     else { outputArray.push(num)}
   })
+  result = outputArray.join(", ")
+
 }; //end beepBooper
 
 //beginning to implement user interface logic to display results to index.html
@@ -42,8 +43,8 @@ $(document).ready(function(){
     event.preventDefault();
     var number = parseInt($("input#userInput").val());
     //store the result as a new variable * not needed as of yet
-    var result = beepBooper(number);
+    beepBooper(number);
     //print the populated array
-    $("#results").text(outputArray);
+    $("#results").text(result);
   });
 });

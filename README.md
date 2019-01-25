@@ -24,11 +24,17 @@ https://cjbreaux.github.io/beep-boop
 * Input: 4
 * Output: 0,"Beep!","Boop!",3,4
 
-4. For numbers containing 3, ALL digits will be replaced with "I'm sorry Dave, I can't do that right now."
+4. For numbers containing 3, ALL digits will be replaced with "I'm sorry Dave, I can't do that right now"
 * Input: 4
 * Output: 0,"Beep!","Boop!","I'm sorry Dave, I can't do that right now.",4
 
-5. More exceptions to be added later
+5. For numbers containing both 1 & 2, ALL digits will be replaced with "Boop!"
+* Input: 12
+* Output: ..9,"Beep!","Beep!","Boop!"
+
+6. For numbers containing both 2 & 3, ALL digits will be replaced with "I'm sorry Dave, I can't do that right now"
+* Input: 23
+* Output: (20), "Boop!","Boop!","I'm sorry Dave, I can't do that right now"
 
 
 
