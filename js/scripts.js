@@ -53,7 +53,7 @@ $(document).ready(function(){
     //print the populated array
     $(".results").text(output);
     $("form#beepbooper").hide();
-    $(".card").show();
+    $(".card").fadeIn();
   });
 
   $("#reset").click(function(){

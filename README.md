@@ -55,7 +55,8 @@ Please note, this project relies upon a CDN to load some resources. You will nee
 ## Known Bugs
 
 * Will continue to add text after upon repeated submissions. (workaround by hiding submit button from user!)
-* Displays form even if user inputs NaN
+* Displays form even if user inputs NaN (workaround by returning output for if isNaN check)
+* Ignores non-alphabetical characters as long as some numbers are inputted. (feature or bug?)
 
 ## Support and contact details
 
