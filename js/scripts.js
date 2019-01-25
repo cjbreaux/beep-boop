@@ -25,8 +25,12 @@ function beepBooper(number) {
   arrayOfStrings.forEach(function(num){
     if (num.includes("1")) {
       outputArray.push("Beep!")
-    } else { outputArray.push(num)
+    } else if (num.includes("2")) {
+      outputArray.push("Boop!")
+    } else if (num.includes("3")) {
+      outputArray.push("I'm sorry Dave.I can't do that right now.")
     }
+    else { outputArray.push(num)}
   })
 
 // console.log(outputString);
