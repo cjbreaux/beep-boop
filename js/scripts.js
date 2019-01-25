@@ -19,11 +19,15 @@ function beepBooper(number) {
   newArray.forEach(function(num){
     if (num === 1) {
       resultArray.push("Beep!");
+    } else if (num === 2) {
+      resultArray.push("Boop!")
+    } else if (num === 3) {
+      resultArray.push("I'm sorry Dave. I'm afraid I can't do that.")
     } else {
       resultArray.push(num);
-    }//end if statement
-  }); //end forEach loop
-} //end beepBooper
+    }
+  }) //end forEach loop
+}; //end beepBooper
 
 //beginning to implement user interface logic to display results to index.html
 $(document).ready(function(){
