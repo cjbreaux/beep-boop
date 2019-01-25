@@ -1,17 +1,29 @@
-//test script that will take in 5 and return an array starting from 0 and counting up 5
-//this will help to see what needs to happen during a loop
 
-var number = 5;
-var array = [];
-
-
+//var result = "";
 //this will create a for loop to produce an array doing the same thing as the previous code but for any number.
-for(i=0; i<=number; i+=1) {
+var array = [];
+var resultArray = [];
+
+function toArray(number) {
+  for(i=0; i<=number; i+=1) {
   array.push(number - i);
+  }
+  array = array.reverse();
+  console.log(array);
+  return array
 }
 
-array = array.reverse();
-console.log(array);
+function beepBooper(number) {
+  var newArray = toArray(number);
+  console.log("Inside beepBooper" + newArray);
+  newArray.forEach(function(num){
+    if (num === 1) {
+      resultArray.push("Beep!");
+    } else {
+      resultArray.push(num);
+    }//end if statement
+  }); //end forEach loop
+} //end beepBooper
 
 //beginning to implement user interface logic to display results to index.html
 $(document).ready(function(){
@@ -19,8 +31,10 @@ $(document).ready(function(){
     event.preventDefault();
     var number = parseInt($("input#userInput").val());
     console.log(number);
-
+    //store the result as a new variable * not needed as of yet
+    var result = beepBooper(number);
+    console.log(number);
+    //print the populated array
+    $("#results").text(resultArray);
   });
-
-
 });
