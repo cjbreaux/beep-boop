@@ -4,6 +4,7 @@
 var array = [];
 var resultArray = [];
 var resultString = "";
+var outputArray = [];
 
 function counter (number) {
   for(i=0; i<=number; i+=1) {
@@ -13,13 +14,20 @@ function counter (number) {
   array.forEach(function(integer){
     resultArray.push(integer.toString());
   })
-  console.log(resultArray);
+  //console.log(resultArray);
   return resultArray;
 }
 
 function beepBooper(number) {
   var arrayOfStrings = counter(number);
-  console.log(arrayOfStrings);
+//  console.log(arrayOfStrings);
+
+  arrayOfStrings.forEach(function(num){
+    if (num.includes("1")) {
+      outputArray.push("Beep!")
+    } else { outputArray.push(num)
+    }
+  })
 
 // console.log(outputString);
 }; //end beepBooper
@@ -34,6 +42,6 @@ $(document).ready(function(){
     var result = beepBooper(number);
   //  console.log(number);
     //print the populated array
-    $("#results").text(resultString);
+    $("#results").text(outputArray);
   });
 });
