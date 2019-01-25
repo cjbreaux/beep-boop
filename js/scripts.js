@@ -21,7 +21,9 @@ function counter (number) {
 }
 
 function beepBooper(number) {
-  if (isNaN(number)) {alert("Beep Boop! I can only read numbers!")}
+  if (isNaN(number)){
+    alert("Beep Boop! I can only read numbers!")
+  }
   var arrayOfStrings = counter(number); //takes in user input and passes it through the counter function to return an array
 
   arrayOfStrings.forEach(function(num){
@@ -37,6 +39,7 @@ function beepBooper(number) {
   result = outputArray.join(", ")
   return result
 
+
 }; //end beepBooper
 
 //beginning to implement user interface logic to display results to index.html
@@ -48,5 +51,8 @@ $(document).ready(function(){
     var output = beepBooper(number);
     //print the populated array
     $(".results").text(output);
+    $("form#beepbooper").hide();
+    $(".card").show();
+
   });
 });

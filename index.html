@@ -13,24 +13,34 @@
   <body>
     <div class="container">
       <h1 class="display-4">Help, my computer is broken!</h1>
+      <div class="row align-items-center">
+          <img src="img/robot.png" alt="A cartoon robot head">
+          <blockquote class="blockquote">
+          <p>"Every time I enter a number in the field below, all I get is a bunch of gibberish back!"</p>
+        </blockquote>
+      </div>
       <br>
-      <p>Every time I enter a number in the field below, all I get is a bunch of gibberish back!</p>
-      <form id="beepbooper">
-        <label for="userInput">BeepBooper - Enter a number below!</label>
-        <div class="form-row">
-          <div class="col-3">
-            <input type="text" class="form-control" placeholder="Number" id="userInput">
+
+
+
+        <form id="beepbooper">
+          <label for="userInput">BeepBooper - Enter a number below!</label>
+          <div class="form-row">
+            <div class="col-3">
+              <input type="text" class="form-control" placeholder="Number" id="userInput">
+            </div>
+            <button type="submit" class="btn btn-primary">Speak!</button>
           </div>
-          <button type="submit" class="btn btn-primary">Speak!</button>
-        </div>
-      </form>
+        </form>
+
 
       <div class="row" id="results">
 
       </div>
-      <div class="card text-monospace bg-dark mb-3" style="max-width: 18rem;">
+
+      <div class="card text-monospace bg-dark mb-3">
           <div class="card-body">
-            <h5 class="card-title">Dark card title</h5>
+            <h5 class="card-title">Here are your results:</h5>
             <p class="card-text results"></p>
           </div>
       </div>

@@ -54,7 +54,8 @@ Please note, this project relies upon a CDN to load some resources. You will nee
 
 ## Known Bugs
 
-Will continue to add text after upon repeated submissions.
+* Will continue to add text after upon repeated submissions.
+* Displays form even if user inputs NaN
 
 ## Support and contact details
 
