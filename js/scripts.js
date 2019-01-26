@@ -39,9 +39,14 @@ function beepBooper(number) {
   })
   result = outputArray.join(", ")
   return result
-
-
 }; //end beepBooper
+
+//try reverse the readout!
+function reverseIt(){
+  outputArray.reverse();
+  result = outputArray.join(", ");
+
+}
 
 //beginning to implement user interface logic to display results to index.html
 $(document).ready(function(){
@@ -59,6 +64,11 @@ $(document).ready(function(){
   $("#reset").click(function(){
     location.reload();
   })
-
+ //try to reverse the text
+  $("#reverse").click(function(){
+    reverseIt();
+    $(".results").hide();
+    $(".reverse").text(result);
+  })
 
 });
