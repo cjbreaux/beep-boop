@@ -20,6 +20,12 @@ function counter (number) {
   return resultArray;
 }
 
+//try reverse the readout!
+function reverseIt(){
+  outputArray.reverse();
+  result = outputArray.join(", ");
+}
+
 function beepBooper(number) {
   if (isNaN(number)){
     alert("Beep Boop! I can only read numbers!")
@@ -41,12 +47,7 @@ function beepBooper(number) {
   return result
 }; //end beepBooper
 
-//try reverse the readout!
-function reverseIt(){
-  outputArray.reverse();
-  result = outputArray.join(", ");
 
-}
 
 //beginning to implement user interface logic to display results to index.html
 $(document).ready(function(){
@@ -61,14 +62,19 @@ $(document).ready(function(){
     $(".card").fadeIn();
   });
 
+  //try to reverse the text
+   $("#reverse").click(function(){
+     reverseIt();
+     $(".results").hide();
+     $(".reverse").text(result);
+   });
+   //reset the page
   $("#reset").click(function(){
     location.reload();
-  })
- //try to reverse the text
-  $("#reverse").click(function(){
-    reverseIt();
-    $(".results").hide();
-    $(".reverse").text(result);
-  })
+  });
+  $("#reset2").click(function(){
+    location.reload();
+  });
+
 
 });
